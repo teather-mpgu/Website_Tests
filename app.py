@@ -887,6 +887,7 @@ def create_initial_data():
             print("✅ База данных создана и наполнена темами и вопросами!")
 
 
-"""if __name__ == '__main__':
+if __name__ == '__main__':
     create_initial_data()
-    app.run(debug=True)"""
+    port=int(os.environ.get("PORT",4000))
+    app.run(hodt="0.0.0.0", port=port)
